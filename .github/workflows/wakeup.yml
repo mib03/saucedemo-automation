@@ -1,0 +1,9 @@
+name: Wakeup GitHub Actions
+
+on: [push]
+
+jobs:
+  dummy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Waking up GitHub Actions"
