@@ -1,0 +1,39 @@
+name: Run Test Automation with Maven
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📦 Checkout kode dari repo
+      uses: actions/checkout@v3
+
+    - name: ☕ Install Java 17
+      uses: actions/setup-java@v3
+      with:
+        distribution: temurin
+        java-version: '17'
+
+    - name: 💾 Cache dependency Maven
+      uses: actions/cache@v3
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-m2-
+
+    - name: 🧪 Run test suite (mvn test)
+      run: mvn clean test
+
+    - name: 📤 Upload report sebagai artifact
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: ExtentReport
+        path: target/ExtentReport.html
