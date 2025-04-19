@@ -33,7 +33,7 @@ jobs:
 
     - name: 📤 Upload report sebagai artifact
       if: always()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v2.2.4
       with:
         name: ExtentReport
         path: target/ExtentReport.html
