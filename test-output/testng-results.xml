@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-19T15:06:58 WIB" name="Default suite" finished-at="2025-04-19T15:07:10 WIB" duration-ms="11905">
+  <suite started-at="2025-04-19T17:49:43 WIB" name="Default suite" finished-at="2025-04-19T17:50:04 WIB" duration-ms="21049">
     <groups>
     </groups>
-    <test started-at="2025-04-19T15:06:58 WIB" name="Default test" finished-at="2025-04-19T15:07:10 WIB" duration-ms="11905">
+    <test started-at="2025-04-19T17:49:43 WIB" name="Default test" finished-at="2025-04-19T17:50:04 WIB" duration-ms="21049">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@408d971b]" started-at="2025-04-19T15:06:58 WIB" name="setUp" finished-at="2025-04-19T15:07:04 WIB" duration-ms="5252" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:43 WIB" name="setUp" finished-at="2025-04-19T17:49:47 WIB" duration-ms="4039" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@408d971b]" started-at="2025-04-19T15:07:04 WIB" name="testLoginWithExcelData" data-provider="loginExcelData" finished-at="2025-04-19T15:07:04 WIB" duration-ms="274" status="PASS">
+        <test-method signature="testInvalidLogin()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:47 WIB" name="testInvalidLogin" finished-at="2025-04-19T17:49:48 WIB" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:48 WIB" name="tearDown" finished-at="2025-04-19T17:49:48 WIB" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:48 WIB" name="setUp" finished-at="2025-04-19T17:49:49 WIB" duration-ms="1482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginAndVerifyInventoryPage()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:49 WIB" name="testLoginAndVerifyInventoryPage" finished-at="2025-04-19T17:49:50 WIB" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginAndVerifyInventoryPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:50 WIB" name="tearDown" finished-at="2025-04-19T17:49:50 WIB" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:51 WIB" name="setUp" finished-at="2025-04-19T17:49:52 WIB" duration-ms="1586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:52 WIB" name="testLoginWithExcelData" data-provider="loginExcelData" finished-at="2025-04-19T17:49:52 WIB" duration-ms="271" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +51,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithExcelData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@408d971b]" started-at="2025-04-19T15:07:04 WIB" name="tearDown" finished-at="2025-04-19T15:07:04 WIB" duration-ms="308" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:52 WIB" name="tearDown" finished-at="2025-04-19T17:49:53 WIB" duration-ms="233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@408d971b]" started-at="2025-04-19T15:07:04 WIB" name="setUp" finished-at="2025-04-19T15:07:06 WIB" duration-ms="2175" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:53 WIB" name="setUp" finished-at="2025-04-19T17:49:54 WIB" duration-ms="1402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@408d971b]" started-at="2025-04-19T15:07:06 WIB" name="testLoginWithExcelData" data-provider="loginExcelData" finished-at="2025-04-19T15:07:07 WIB" duration-ms="273" status="PASS">
+        <test-method signature="testLoginWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:54 WIB" name="testLoginWithExcelData" data-provider="loginExcelData" finished-at="2025-04-19T17:49:54 WIB" duration-ms="282" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,15 +75,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithExcelData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@408d971b]" started-at="2025-04-19T15:07:07 WIB" name="tearDown" finished-at="2025-04-19T15:07:07 WIB" duration-ms="277" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:54 WIB" name="tearDown" finished-at="2025-04-19T17:49:55 WIB" duration-ms="275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@408d971b]" started-at="2025-04-19T15:07:07 WIB" name="setUp" finished-at="2025-04-19T15:07:09 WIB" duration-ms="2089" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:55 WIB" name="setUp" finished-at="2025-04-19T17:49:56 WIB" duration-ms="1316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@408d971b]" started-at="2025-04-19T15:07:09 WIB" name="testLoginWithExcelData" data-provider="loginExcelData" finished-at="2025-04-19T15:07:09 WIB" duration-ms="274" status="PASS">
+        <test-method signature="testLoginWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:56 WIB" name="testLoginWithExcelData" data-provider="loginExcelData" finished-at="2025-04-19T17:49:56 WIB" duration-ms="272" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,7 +99,91 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithExcelData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@408d971b]" started-at="2025-04-19T15:07:09 WIB" name="tearDown" finished-at="2025-04-19T15:07:10 WIB" duration-ms="337" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:56 WIB" name="tearDown" finished-at="2025-04-19T17:49:56 WIB" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:56 WIB" name="setUp" finished-at="2025-04-19T17:49:58 WIB" duration-ms="1448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithMultipleCredentials(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:58 WIB" name="testLoginWithMultipleCredentials" data-provider="loginCredentials" finished-at="2025-04-19T17:49:58 WIB" duration-ms="305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithMultipleCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:58 WIB" name="tearDown" finished-at="2025-04-19T17:49:59 WIB" duration-ms="318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:49:59 WIB" name="setUp" finished-at="2025-04-19T17:50:00 WIB" duration-ms="1318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithMultipleCredentials(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:50:00 WIB" name="testLoginWithMultipleCredentials" data-provider="loginCredentials" finished-at="2025-04-19T17:50:00 WIB" duration-ms="241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong_password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithMultipleCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:50:00 WIB" name="tearDown" finished-at="2025-04-19T17:50:00 WIB" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:50:00 WIB" name="setUp" finished-at="2025-04-19T17:50:02 WIB" duration-ms="1562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithMultipleCredentials(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:50:02 WIB" name="testLoginWithMultipleCredentials" data-provider="loginCredentials" finished-at="2025-04-19T17:50:02 WIB" duration-ms="255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithMultipleCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:50:02 WIB" name="tearDown" finished-at="2025-04-19T17:50:02 WIB" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:50:02 WIB" name="setUp" finished-at="2025-04-19T17:50:04 WIB" duration-ms="1435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLogin()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:50:04 WIB" name="testValidLogin" finished-at="2025-04-19T17:50:04 WIB" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1d296da]" started-at="2025-04-19T17:50:04 WIB" name="tearDown" finished-at="2025-04-19T17:50:04 WIB" duration-ms="254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -1,0 +1,33 @@
+name: Deploy Test Report to GitHub Pages
+
+on:
+  workflow_run:
+    workflows: ["Run Test Automation with Maven"]
+    types: 
+      - completed
+
+jobs:
+  deploy: # Only run if the CI workflow succeeded\    
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Download Test Report artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ExtentReport
+          path: report
+          
+      - name: Prepare docs folder
+        run: |
+          mkdir -p docs
+          cp report/ExtentReport.html docs/index.html
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs
